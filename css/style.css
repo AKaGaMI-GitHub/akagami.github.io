@@ -1,0 +1,45 @@
+@import url('https://fonts.cdnfonts.com/css/inter');
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #FaFaFa;
+}
+
+nav {
+    background-color: #FaFaFa;
+}
+
+.scroll-text span{
+    display: none;
+}
+
+.scroll-text span.textshow {
+    display: inline;
+    animation: textIn, .5s, ease;
+}
+
+.scroll-text span.textnotshow {
+    animation: textOut, .5s, ease;
+}
+
+@keyframes textIn{
+    0%{
+        transform: translateY(100%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+
+@keyframes textOut{
+    0%{
+        transform: translateY(0%);
+    }
+    100%{
+        transform: translateY(-100%);
+    }
+}
+
